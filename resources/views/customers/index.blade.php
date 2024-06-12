@@ -22,7 +22,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $customer->code }}</td>
                             <td>{{ $customer->name }}</td>
-                            <td></td>
+                            <td> <a href="{{ route('customer.show', $customer->id) }} claas="btn btn-info btn-sm">Lihat</a></td>
                         </tr>
                     @endforeach
                 </tbody>
