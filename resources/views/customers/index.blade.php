@@ -20,7 +20,7 @@
                     @foreach ($customers as $customer)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $customer->kode }}</td>
+                            <td>{{ $customer->code }}</td>
                             <td>{{ $customer->name }}</td>
                             <td></td>
                         </tr>
