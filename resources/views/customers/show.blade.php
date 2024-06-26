@@ -26,6 +26,32 @@
                 <th>Telepon Nasabah</th>
                 <td>: {{ $customer->phone }}</td>
             </tr>
+            <tr>
+                <th>Total Simpanan</th>
+                <td>: {{ $customer->mandatorySavings->sum('amount') }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="mb-2">
+        <h1>Riwayat pembayaran simpanan wajib</h1>
+        <table class="table table-hover table-stripped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($customer->mandatorySavings as $ms)
+                <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $ms->date }}</td>
+                    <td>{{ $ms->amount }}</td>
+                </tr>
+                @endforeach
+            </tbody>
         </table>
     </div>
 @endsection

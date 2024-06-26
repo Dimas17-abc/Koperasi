@@ -28,8 +28,8 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $customer->code }}</td>
                             <td>{{ $customer->name }}</td>
-                            <td class="d-flex"> 
-                                <a href="{{ route('customer.show', $customer->id) }}" claas="btn btn-info btn-sm">Lihat</a>
+                            <td class="d-flex">
+                                <a href="{{ route('customer.show', $customer->id) }}" class="btn btn-info btn-sm">Lihat</a>
                                 <a href="{{ route('customer.edit', $customer->id) }}" class="btn btn-warning btn-sm mx-1">Edit</a>
                                 <form action="{{ route('customer.destroy', $customer->id) }}" method="post">
                                     @csrf

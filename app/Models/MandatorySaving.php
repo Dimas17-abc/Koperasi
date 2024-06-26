@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Customer extends Model
+class MandatorySaving extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['code', 'name', 'phone', 'address'];
+    protected $fillalbe = ['date', 'customer_id', 'amount'];
 
     /*
         * 1 Nasabah / customer punya banyak simpanan / mandatory savings(hasmany)
         * 1 Simpanan kepunyaan 1 nasabah(belongsto)
     */
 
-    public function mandatorySavings() {
-        return $this->hasMany(MandatorySaving::class, 'customer_id');
+    public function customer() {
+        return $this->belongsTo(Customer::class, 'customer_id');
     }
 }
