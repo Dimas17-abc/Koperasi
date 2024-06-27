@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MandatorySavingController;
 use App\Http\Controllers\CustomerController;
@@ -19,6 +22,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+  
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => ['auth']], function() {
+Route::resource('roles', RoleController::class);
+Route::resource('users', UserController::class);
+
 Route::get('customer/create', [CustomerController::class, 'create'])->name('customer.create');
 Route::post('customer/store', [CustomerController::class, 'store'])->name('customer.store');
 
@@ -30,3 +41,6 @@ Route::put('customer/update', [CustomerController::class, 'update'])->name('cust
 Route::delete('customer/destroy/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
 
 Route::resource('mandatory-saving', MandatorySavingController::class);
+
+
+});
