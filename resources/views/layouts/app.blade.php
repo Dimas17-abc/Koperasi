@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -33,7 +33,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('customer.index') }}">Nasabah</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('mandatory-saving.index') }}">Simpanan Wajib</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('users.index') }}">Manage Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -79,5 +93,8 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+Xjg+YFj0LlJ68+Fkfq6N+74I1pi" crossorigin="anonymous"></script>
 </body>
 </html>
