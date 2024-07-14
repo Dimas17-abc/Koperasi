@@ -33,9 +33,12 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
+<<<<<<< HEAD
             \Illuminate\Session\Middleware\AuthenticateSession::class,
+=======
+>>>>>>> 1dae2f8c966200fa0d4c685d4bb4fe7c6e9397e5
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+            \App\Http\Middleware\VerifyCsrfToken::class, // Pastikan middleware ini aktif
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -66,5 +69,11 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+<<<<<<< HEAD
+=======
+        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+        'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+>>>>>>> 1dae2f8c966200fa0d4c685d4bb4fe7c6e9397e5
     ];
 }

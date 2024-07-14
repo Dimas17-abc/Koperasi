@@ -1,3 +1,4 @@
+/* Existing CSS */
 section {
     margin-top: 70px;
     margin-bottom: 90px;
@@ -46,10 +47,16 @@ section {
     width: auto;
 }
 
+<<<<<<< HEAD
 
 .tentang .deksripsi {
     font-size: 18px;
     line-height: 25px;
+=======
+.tentang .deskripsi {
+  font-size: 18px;
+  line-height: 25px;
+>>>>>>> 1dae2f8c966200fa0d4c685d4bb4fe7c6e9397e5
 }
 
 .tentang ul.social {
@@ -58,6 +65,7 @@ section {
 }
 
 .tentang ul.social li {
+<<<<<<< HEAD
     margin-right: 16px;
     padding: 0;
 }
@@ -129,3 +137,79 @@ footer {
     margin-bottom: 20px;
     width: 25%;
   }
+=======
+  margin-right: 16px;
+  padding: 0;
+}
+
+.alumni .card {
+  transition: .3s;
+}
+
+.alumni .card:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.alumni .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alumni .card .card-body img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+  box-shadow: 0 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #272727;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li i {
+  margin-right: 6px;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: center;
+}
+
+footer .container .col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+footer .container img {
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+  width: 25%;
+}
+
+>>>>>>> 1dae2f8c966200fa0d4c685d4bb4fe7c6e9397e5

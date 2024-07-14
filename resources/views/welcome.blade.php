@@ -211,10 +211,28 @@
     </footer>
 
 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
     </script>
+=======
+                    <p class="text-center">
+                        Kegiatan Qurban DKM LPKIA dengan mengurbankan 2 ekor domba dilaksanakan
+                        di daerah kampus LPKIA dengan bantuan panitia, alumni, pembina,
+                    </p>
+                    <p class="font-weight-bold text-center mb-0">
+                        DKM LPKIA
+                    </p>
+                    <span class="text-muted">Qurban</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+>>>>>>> 1dae2f8c966200fa0d4c685d4bb4fe7c6e9397e5
 @endsection
