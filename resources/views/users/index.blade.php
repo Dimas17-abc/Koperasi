@@ -1,5 +1,5 @@
-<!-- resources/views/users/index.blade.php -->
-@extends('layouts.app')
+@extends('layouts.main')
+
 
 @section('content')
 <div class="row">
@@ -13,11 +13,13 @@
     </div>
 </div>
 
+
 @if ($message = Session::get('success'))
 <div class="alert alert-success">
   <p>{{ $message }}</p>
 </div>
 @endif
+
 
 <table class="table table-bordered">
  <tr>
@@ -50,7 +52,9 @@
  @endforeach
 </table>
 
+
 {!! $data->render() !!}
+
 
 <p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 @endsection
